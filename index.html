@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Inocente!</title>
+
+    <meta property="og:title" content="Dragon Showdown">
+    <meta property="og:description" content="¡Bienvenido a Dragon Showdown, el juego definitivo para los amantes de los dragones y la estrategia! Sumérgete en un fascinante mundo lleno de misterios y desafíos en tu papel como Maestro de Dragones. ¿Estás listo para emprender una emocionante aventura?">
+    <meta property="og:image" content="Logo_juego.webp">
+    <meta property="og:url" content="index.html">
+
     <style>
         video {
             display: block;
@@ -29,7 +35,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('myVideo');
 
-            // Wait for 1 second, then unmute the video
             setTimeout(function() {
                 video.muted = false;
             }, 150);
