@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Inocente!</title>
+    <style>
+        video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        div {
+            text-align: center;
+        }
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <video id="myVideo" width="1120" height="630" controls autoplay loop muted>
+        <source src="rickroll.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('myVideo');
+
+            // Wait for 1 second, then unmute the video
+            setTimeout(function() {
+                video.muted = false;
+            }, 150);
+        });
+    </script>
+    <br>
+    <div>
+        <h1>¡Inocente!</h1>
+        <img src="inocente.jpg" width="300"/>
+        <br>
+        <h1>Pensarás que has perdido el tiempo pero... ¿y si no?</h1>
+        <img src="Titulo.png" width="1120"/>
+        <h2>Resulta que Dragon Showdown sí es un proyecto en el que he estado trabajando.</h1>
+        <h2>Solo necesito un compositor y un dibujante que me ayuden y el juego podrá ver la luz.</h1>
+        <h2>Si te apetece, contacta conmigo en el Slack y lo hablamos.</h1>
+        <h2>Toma al inicial que me han hecho, por si eso te anima :3</h1>
+        <img src="dragon_1-1.png" width="300"/>
+        <h6>(Y sí, el fondo me lo hizo una IA. Pero no quiero cosas hechas por IA en mi juego. Salvo código si eso (?))</h6>
+    </div>
+</body>
+</html>
